@@ -1,23 +1,23 @@
 # CircleXO Docs
 
-Documentation for **CircleXO v2**: the CircleXO hub and every first-party CircleXO app, rebuilt as
-ToGo plugins in one monorepo ([circlexo/apps](https://github.com/circlexo/apps)), with one binary
-and one deployment per app.
+Documentation for **CircleXO**, the AI-native platform for building, composing, deploying, and operating
+products, capabilities, and autonomous agents. The code lives in [circlexo/apps](https://github.com/circlexo/apps).
 
-> **Status:** planning. The v2 plan is being written. Nothing has been ported yet.
+> **Status:** architecture review in progress. Nothing has been implemented or ported yet. Docs describe
+> released behaviour only, so most sections below are still empty.
 
 ## What lives here
 
 | Area | Contents |
 |---|---|
-| **Architecture** | The v2 target layout, the shared kernel packages and how the hub and apps fit together |
-| **The v2 plan** | Decisions, migration order, cutover and rollback per domain, the PgBouncer plan |
-| **App-plugin contract** | What every app plugin exports: routes, migrations, manifest, feature-key constants, MCP tools, web routes |
-| **Build and deploy** | The per-app build/deploy matrix, generated env and NPM host config, one LXC per product |
-| **Apps** | One section per app (hub, Mahaam, Zekra, Orchestra, Moharrik, Hosbah, SeatFor, Nasaq Studio, Health Debug and the business apps) |
-| **Third-party App Contract** | The public contract for external developers: manifest, OIDC sign-in, webhooks, the circlexo-go SDK |
+| **Architecture** | The approved architecture: Platform, Products, Capabilities and Agents, and how they compose |
+| **Plans and decisions** | Approved decisions, delivery sequence, and (later) migration, cutover and rollback per product |
+| **Contracts** | Platform, product and capability contracts: manifests, entitlements, events, provisioning, MCP tools |
+| **Build and deploy** | How each product is built, versioned and deployed independently |
+| **Products** | One section per product (Mahaam, Zekra, Orchestra, Moharrik, Hosbah, SeatFor, Nasaq Studio, Health Debug and the business apps) |
+| **Third-party App Contract** | The public contract for external developers, once it is decided |
 
 ## Related
 
-- [circlexo/apps](https://github.com/circlexo/apps): the v2 monorepo (code)
-- [circlexo/circlexo](https://github.com/circlexo/circlexo): the current (v1) hub, live at circlexo.com
+- [circlexo/apps](https://github.com/circlexo/apps): the CircleXO repository (code)
+- [circlexo/circlexo](https://github.com/circlexo/circlexo): the earlier experimental (v1) hub, live at circlexo.com
