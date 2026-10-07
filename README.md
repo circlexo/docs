@@ -21,5 +21,3 @@ and one deployment per app.
 
 - [circlexo/apps](https://github.com/circlexo/apps): the v2 monorepo (code)
 - [circlexo/circlexo](https://github.com/circlexo/circlexo): the current (v1) hub, live at circlexo.com
-
-The earlier GitBook docs (2025) are kept on the `gitbook-2025` branch.
