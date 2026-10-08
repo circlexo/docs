@@ -3,7 +3,7 @@
 Documentation for **CircleXO**, the AI-native platform for building, composing, deploying, and operating
 products, capabilities, and autonomous agents. The code lives in [circlexo/apps](https://github.com/circlexo/apps).
 
-> **Status:** architecture review in progress. Nothing has been implemented or ported yet. Docs describe
+> **Status:** Architecture v1.1 frozen; Phase 0 in progress; nothing implemented or ported yet. Docs describe
 > released behaviour only, so most sections below are still empty.
 
 ## What lives here
