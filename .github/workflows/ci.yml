@@ -10,7 +10,7 @@ jobs:
     # Checks every link between pages in this repository (offline: external sites are not fetched).
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: lycheeverse/lychee-action@v2
         with:
           args: --offline --no-progress --include-fragments './**/*.md'
