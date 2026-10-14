@@ -1,0 +1,43 @@
+name: Docs problem
+description: A page is wrong, unclear, out of date or missing.
+title: "[Docs]: "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Search [existing issues](https://github.com/circlexo/docs/issues) first.
+        **Security problems go to [SECURITY.md](https://github.com/circlexo/docs/blob/master/SECURITY.md), not here.**
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What is wrong or missing?
+      description: Link the page (or say which page is missing) and what it should say instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Area
+      options:
+        - Architecture
+        - Plans and decisions
+        - Contracts
+        - Build and deploy
+        - Products
+        - Third-party App Contract
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sources or screenshots
+      description: Code, behaviour or links that show the right answer.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
